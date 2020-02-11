@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+	<title>Project Checkin</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<html>
+<body>
+
+	<center><img src="images/logo.png" style="width: 15%"></center>
+	<p class="font" style="text-align: center; font-size: 30px">Project Checkin</p>
+	<div class="row">
+		<div class="column">
+		  <div class="card">
+			<p class="font">Beginners Project</p>
+			<img src="images/web.jpg" style="width: 25%">
+			<br>
+			<input class="font" type="text" placeholder="Name" id="webMemberName" 
+			style="width: 50%; padding: 12px 20px; margin: 20px 0; display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;">
+			<input class="font" type="number" placeholder="CIN number" id="webMemberCIN" style=" width: 50%;
+			padding: 12px 20px;
+			margin: 20px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;">
+			<br>
+			<button class="btn success" id="space_invaders" onclick="web()">Check In</button>
+		  </div>
+		</div>
+	  
+		<div class="column">
+		  <div class="card">
+			<p class="font">Advance Project</p>
+			<img src="images/spaceinvaders.png" style="width: 31%">
+			<br>
+			<div id="ClearFormSpaceInvaders">
+				<input class="font" type="text" placeholder="Name" id="spaceInvadersMemberName" style=" width: 50%;
+				padding: 12px 20px;
+				margin: 20px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;">
+				<br>
+				<input class="font" type="number" placeholder="CIN number" id="spaceInvadersMemberCIN" style=" width: 50%;
+				padding: 12px 20px;
+				margin: 20px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;">
+				<br>
+				<button class="btn success" id="space_invaders" onclick="spaceinvaders()">Check In</button>
+			</div>
+		  </div>
+		  <br>
+		</div>
+		</div>
+		<center><a href="admin.html"><button class="btn success">View Attendence</button></a></center>
+		</div>
+	  
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+<script src="/__/firebase/init.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+	 https://firebase.google.com/docs/web/setup#available-libraries -->
+	 <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+<script src="js/config.js"></script>
+
+<script src="js/index.js"></script>
+
+
+</body>
+</html>
